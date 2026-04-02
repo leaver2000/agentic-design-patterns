@@ -1,7 +1,7 @@
 ---
 name: orchestrator
 abstract: true
-extends: [mediator]
+extends: [../../abc/mediator.md]
 description: Intermediate abstraction for multi-agent coordination. Routes tasks to specialist agents, aggregates results, and manages the interaction protocol. Subclasses define the agent roster and routing logic.
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: codebase-researcher
 abstract: false
-extends: [researcher]
+extends: [./researcher.md]
 description: Researches questions about a local codebase using grep, glob, and file reading. Grounds answers in specific file locations and line references.
 model: claude-sonnet-4-6
 tools: [grep, glob, read_file, list_directory]

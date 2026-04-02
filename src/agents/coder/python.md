@@ -1,7 +1,7 @@
 ---
 name: python-coder
 abstract: false
-extends: [coder]
+extends: [./coder.md]
 description: Writes idiomatic Python 3.12+ code following PEP 8, using type annotations throughout. Runs ruff for linting and generates pytest test cases.
 model: claude-sonnet-4-6
 tools: [read_file, write_file, bash]

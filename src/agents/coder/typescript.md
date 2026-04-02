@@ -1,7 +1,7 @@
 ---
 name: typescript-coder
 abstract: false
-extends: [coder]
+extends: [./coder.md]
 description: Writes idiomatic TypeScript 5+ with strict mode enabled. Uses ESLint + Prettier for linting and Vitest for tests.
 model: claude-sonnet-4-6
 tools: [read_file, write_file, bash]

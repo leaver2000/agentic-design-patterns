@@ -1,7 +1,7 @@
 ---
 name: coder
 abstract: true
-extends: [template-method]
+extends: [../../abc/template-method.md]
 description: Intermediate abstraction for language-specific coding agents. Defines the plan/implement/test/review workflow; subclasses provide the language, toolchain, and style conventions.
 ---
 

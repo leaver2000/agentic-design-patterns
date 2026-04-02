@@ -1,14 +1,14 @@
 ---
 name: research-and-write-orchestrator
 abstract: false
-extends: [orchestrator]
+extends: [./orchestrator.md]
 description: Coordinates a web researcher, a writer, and a quality critic to produce a grounded, polished document from a question or brief.
 model: claude-sonnet-4-6
 tools: []
 roster:
-  researcher: web-researcher
+  researcher: ../researcher/web.md
   writer: null
-  critic: quality-critic
+  critic: ../critic/quality.md
 ---
 
 ## System Prompt
@@ -38,7 +38,7 @@ Coordination rules:
 ```
 
 ## Concrete Overrides
-- `roster()` → `{researcher: web-researcher, critic: quality-critic}`
+- `roster()` → `{researcher: ../researcher/web.md, critic: ../critic/quality.md}`
 - `decompose(task)` → splits into research brief and writing brief
 - `assign(subtask)` → maps research subtasks to `researcher`, writing to `writer`, review to `critic`
 - `merge(results)` → applies critic verdict, appends findings or halts on fail

@@ -1,7 +1,7 @@
 ---
 name: safety-critic
 abstract: false
-extends: [critic]
+extends: [./critic.md]
 description: Evaluates agent outputs for safety violations — harmful content, PII exposure, prompt injection, and policy compliance. Hard-fails on critical violations.
 model: claude-haiku-4-5
 tools: []

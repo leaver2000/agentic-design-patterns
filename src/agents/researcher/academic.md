@@ -1,7 +1,7 @@
 ---
 name: academic-researcher
 abstract: false
-extends: [researcher]
+extends: [./researcher.md]
 description: Researches questions using academic search (arXiv, Semantic Scholar, PubMed). Prioritizes peer-reviewed primary sources and surfaces methodological limitations.
 model: claude-sonnet-4-6
 tools: [web_search, fetch_url]

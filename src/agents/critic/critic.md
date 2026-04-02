@@ -1,7 +1,7 @@
 ---
 name: critic
 abstract: true
-extends: [visitor]
+extends: [../../abc/visitor.md]
 description: Intermediate abstraction for evaluation agents. Visits the elements of an agent's output and scores them without modifying the output. Subclasses define the evaluation criteria.
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: quality-critic
 abstract: false
-extends: [critic]
+extends: [./critic.md]
 description: Evaluates agent outputs for accuracy, clarity, completeness, and groundedness. Returns a scored CriticReport with pass/fail/warn verdict.
 model: claude-haiku-4-5
 tools: []

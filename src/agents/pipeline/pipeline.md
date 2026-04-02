@@ -1,7 +1,7 @@
 ---
 name: pipeline
 abstract: true
-extends: [chain-of-responsibility]
+extends: [../../abc/chain-of-responsibility.md]
 description: Intermediate abstraction for sequential agent pipelines. Each stage processes a task and passes the result to the next stage. Subclasses define the stage roster and pass/stop criteria.
 ---
 

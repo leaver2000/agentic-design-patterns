@@ -1,7 +1,7 @@
 ---
 name: web-researcher
 abstract: false
-extends: [researcher]
+extends: [./researcher.md]
 description: Researches questions using live web search and URL fetching. Grounds all answers in retrieved pages with inline citations.
 model: claude-sonnet-4-6
 tools: [web_search, fetch_url]

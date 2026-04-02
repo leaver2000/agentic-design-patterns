@@ -1,7 +1,7 @@
 ---
 name: researcher
 abstract: true
-extends: [template-method]
+extends: [../../abc/template-method.md]
 description: Intermediate abstraction for domain-specific research agents. Defines the plan/search/synthesize workflow; subclasses provide the domain and retrieval strategy.
 ---
 

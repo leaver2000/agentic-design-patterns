@@ -1,14 +1,14 @@
 ---
 name: moderation-pipeline
 abstract: false
-extends: [pipeline]
+extends: [./pipeline.md]
 description: Sequential content moderation pipeline. Passes content through a fast keyword filter, a safety critic, and a policy classifier before releasing it.
 model: claude-haiku-4-5
 tools: []
 stages:
-  - keyword-filter
-  - safety-critic
-  - policy-classifier
+  - ../critic/keyword-filter.md
+  - ../critic/safety.md
+  - ../critic/policy-classifier.md
 ---
 
 ## System Prompt
@@ -42,7 +42,7 @@ if stage 2 halts. Stages are ordered cheapest-first.
 ```
 
 ## Concrete Overrides
-- `stages()` → `[keyword-filter, safety-critic, policy-classifier]`
+- `stages()` → `[../critic/keyword-filter.md, ../critic/safety.md, ../critic/policy-classifier.md]`
 - `should_halt(result, index)` → True if result contains a rejection verdict
 - `transform(payload, result)` → pass original payload + stage result to next stage
 - `terminal_result(payload)` → `{decision: "pass", halted_at_stage: null, ...}`
